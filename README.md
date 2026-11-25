@@ -49,10 +49,6 @@ index.php       Accueil
 
 Projet collectif réalisé dans le cadre d'une SAÉ. Les droits sur les contributions originales appartiennent à leurs auteurs respectifs. Consulter le fichier LICENSE. Les bibliothèques tierces restent soumises à leurs licences respectives.
 
-## Vérifications
-
-Les vérifications peuvent être exécutées localement. Le script `tests/smoke.py` teste les parcours principaux avec Python 3, une base MySQL de test vierge et le serveur PHP démarré sur `127.0.0.1:8000`. Depuis la racine du projet, lancer `python3 tests/smoke.py` (ou `py tests/smoke.py` sous Windows). Le script crée et modifie des données : ne jamais le lancer sur une base contenant des données réelles.
-
 ## Périmètre
 
 Projet pédagogique présenté comme une démonstration locale, non hébergé en production. Utiliser uniquement des données fictives. La mise en production nécessiterait des tests fonctionnels et un audit de sécurité complémentaires.
