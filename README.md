@@ -51,7 +51,7 @@ Projet collectif réalisé dans le cadre d'une SAÉ. Les droits sur les contribu
 
 ## Vérifications
 
-Le workflow GitHub Actions vérifie la syntaxe PHP et exécute les parcours principaux sur une base MySQL 8 de test vierge avec des comptes fictifs. Les identifiants de test ne sont pas destinés à une installation réelle. Le script `tests/smoke.py` est réservé à une base de test jetable ; ne pas le lancer sur une base contenant des données.
+Les vérifications peuvent être exécutées localement. Le script `tests/smoke.py` teste les parcours principaux avec Python 3, une base MySQL de test vierge et le serveur PHP démarré sur `127.0.0.1:8000`. Depuis la racine du projet, lancer `python3 tests/smoke.py` (ou `py tests/smoke.py` sous Windows). Le script crée et modifie des données : ne jamais le lancer sur une base contenant des données réelles.
 
 ## Périmètre
 
