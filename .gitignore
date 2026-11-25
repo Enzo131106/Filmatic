@@ -1,0 +1,11 @@
+/config.local.php
+.env
+.env.*
+!.env.example
+*.log
+*.sql.gz
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

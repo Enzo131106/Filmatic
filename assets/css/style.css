@@ -1,0 +1,186 @@
+/* Importation d'une police géométrique et ultra-moderne */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-main: #080C14;          /* Fond sombre profond et épuré */
+    --bg-card: #111726;          /* Fond des cartes légèrement plus clair */
+    --bg-glass: rgba(17, 23, 38, 0.6); /* Effet verre pour le modernisme */
+    --luigi-green: #00E676;      /* Vert néon spectral très dynamique */
+    --ghost-blue: #00B0FF;      /* Bleu ectoplasme pour les accents */
+    --text-main: #F3F4F6;        /* Blanc doux pour ne pas fatiguer les yeux */
+    --text-muted: #9CA3AF;       /* Gris sobre pour les textes secondaires */
+    --border-subtle: rgba(255, 255, 255, 0.07);
+}
+
+.text-luigi-gold {
+    color: #ffcc33; /* Fallback pour les vieux navigateurs */
+    background: linear-gradient(180deg, #ffe066 0%, #ffb300 40%, #ff7a00 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Ton effet glow externe super puissant */
+    filter: drop-shadow(0px 0px 12px rgba(255,150,0,0.8));
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+/* Typographies épurées */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-main);
+}
+
+/* Correction radicale du contraste pour les textes secondaires */
+.text-muted, 
+.text-secondary, 
+.text-body-secondary, 
+p.text-muted {
+    color: #94A3B8 !important; /* Gris ardoise clair ultra-lisible */
+    opacity: 1 !important;     /* Annule les opacités trop basses de Bootstrap */
+}
+
+/* Style uniforme pour les paragraphes standards */
+p {
+    color: #E2E8F0 !important; /* Blanc cassé doux */
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.text-gradient-green {
+    background: linear-gradient(135deg, #FFF 30%, var(--luigi-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navbar Minimaliste */
+.navbar {
+    background: rgba(8, 12, 20, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 1.5rem;
+}
+
+.navbar-brand span {
+    color: var(--luigi-gold);
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-main) !important;
+}
+
+/* Cartes (Cards) Style Épuré */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons Dynamiques */
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 22px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary {
+    background: var(--luigi-green);
+    border: none;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #00ff84;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 230, 118, 0.25);
+}
+
+.btn-outline-light {
+    border-color: var(--border-subtle);
+    color: var(--text-main);
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-main);
+    color: var(--text-main);
+}
+
+/* Inputs de formulaires modernes */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid var(--border-subtle) !important;
+    color: var(--text-main) !important;
+    border-radius: 10px;
+    padding: 12px 16px;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: var(--luigi-green) !important;
+    box-shadow: 0 0 0 3px rgba(0, 230, 118, 0.15) !important;
+}
+
+.form-control::placeholder {
+    color: #4b5563;
+}
+
+/* Listes de Vote (Sortable) */
+.sortable-list li {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-subtle);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    cursor: grab;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sortable-list li:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sortable-list li:active {
+    cursor: grabbing;
+    background: rgba(0, 230, 118, 0.05);
+    border-color: var(--luigi-green);
+}
+
+.rank-badge {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.footer{
+    background: rgba(8, 12, 20, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border-subtle);
+    padding: 18px 0;
+}
