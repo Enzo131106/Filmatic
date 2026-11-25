@@ -2,6 +2,12 @@
 
 Filmatic est une application web réalisée en équipe dans le cadre d'une SAÉ du BUT Métiers du Multimédia et de l'Internet à l'IUT de Tarbes. Elle permet d'organiser des séances de cinéma et de choisir collectivement les films et les lieux de projection.
 
+## Aperçu
+
+![Page d'accueil de Filmatic avec le carrousel des événements](assets/img/filmatic-demo.webp)
+
+*Aperçu de démonstration de la page d'accueil avec des événements fictifs, réalisé à partir d'une version statique de l'interface.*
+
 ## Fonctionnalités
 
 - Inscription, connexion et profils.
@@ -36,7 +42,7 @@ Se déconnecter puis se reconnecter. Aucun compte ni mot de passe de démonstrat
 
 ```text
 admin/          Administration
-assets/         Feuille de style et logo
+assets/         Feuille de style, logo et capture de démonstration
 database/       Schéma SQL vierge
 recruitements/  Demandes de rôle
 db.php          Connexion PDO
