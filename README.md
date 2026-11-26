@@ -53,7 +53,14 @@ index.php       Accueil
 
 ## Auteurs et droits
 
-Projet collectif réalisé dans le cadre d'une SAÉ. Les droits sur les contributions originales appartiennent à leurs auteurs respectifs. Consulter le fichier LICENSE. Les bibliothèques tierces restent soumises à leurs licences respectives.
+Filmatic a été réalisé collectivement par :
+
+- Mattéo Landour
+- Mathis Martinez
+- Enzo Camilo
+- Anna Ledornat
+
+Les droits sur les contributions originales appartiennent à leurs auteurs respectifs. Consulter le fichier [LICENSE](LICENSE). Les bibliothèques tierces restent soumises à leurs licences respectives.
 
 ## Périmètre
 
